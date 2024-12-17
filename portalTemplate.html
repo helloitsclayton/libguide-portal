@@ -1,29 +1,4 @@
-<body class="s-lg-guide-body">
-	<style>
-		.guidesRow {
-			display: grid;
-			grid-template-columns: repeat(6,1fr);
-			gap: 0 15px;
-		}
-
-		.guidesRow ul {
-			padding-left: 0;
-		}
-
-		.guidesRow span > a {
-			font-size: 18px;
-			line-height: 1.1;
-		}
-
-		.guidesRow span > a .pad-right-sm {
-			margin:auto 0;
-		}
-
-		.guidesRow span > a img {
-			margin-bottom:10px;
-			max-height:100px;
-		}
-
+<style>
 	@media all and (max-width: 768px) {
 		.guidesRow{
 			grid-template-columns: repeat(3,1fr);
@@ -35,7 +10,32 @@
 			grid-template-columns: repeat(4,1fr);
 		}
 	}
-	</style>
+
+	.guidesRow {
+		display: grid;
+		grid-template-columns: repeat(6,1fr);
+		gap: 0 15px;
+	}
+
+	.guidesRow ul {
+		padding-left: 0;
+	}
+
+	.guidesRow span > a {
+		font-size: 18px;
+		line-height: 1.1;
+	}
+
+	.guidesRow span > a .pad-right-sm {
+		margin:auto 0;
+	}
+
+	.guidesRow span > a img {
+		margin-bottom:10px;
+		max-height:100px;
+	}
+</style>
+<body class="s-lg-guide-body">
 {{skip_link}}
 {{obsolete_browser_alert}}
 {{ADMIN_CMD_BAR}}
@@ -68,24 +68,24 @@
 <!-- BEGIN: Guide Content -->
 	<div id="s-lg-guide-main" class="container s-lib-main s-lib-side-borders" tabindex="-1">
 		{{empty_page_sub_page_list}}
-		<div class="row" id="Row1">
+		<div class="row">
 			<div id="s-lg-col-1" class="col-md-12">
 				<div class="s-lg-col-boxes">
 					{{content_col_1}}
 				</div>
 			</div>
 		</div>
-		<div class="guidesRow" id="Row2">
+		<div class="guidesRow">
 			{{content_col_2}}
 		</div>
-		<div class="row" id="Row3">
-			<div id="s-lg-col-8" class="col-md-12">
+		<div class="row">
+			<div id="s-lg-col-3" class="col-md-12">
 				<div class="s-lg-col-boxes">
 					{{content_col_3}}
 				</div>
 			</div>
 		</div>
-		<div class="guidesRow" id="Row4">
+		<div class="guidesRow">
 			{{content_col_4}}
 		</div>
 	</div>
